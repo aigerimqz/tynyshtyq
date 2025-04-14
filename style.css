@@ -650,7 +650,6 @@ footer {
   }
 }
 
-/* ================== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНА ================== */
 @media (max-width: 768px) {
   body {
     background: url("phonebg.JPG");

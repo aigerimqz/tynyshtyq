@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Динамичная аффирмация (можно расширять список)
 const affirmations = [
   "Мен өзіме сенімдімін",
   "Мен өмірге ғашықпын",
@@ -73,20 +72,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const quoteElement = document.getElementById("daily-quote");
 
   function updateAffirmation() {
-    // Плавно исчезаем
     quoteElement.classList.add("fade-out");
 
-    // Подождём, пока завершится анимация исчезновения
     setTimeout(() => {
       const randomIndex = Math.floor(Math.random() * affirmations.length);
       const newQuote = affirmations[randomIndex];
       quoteElement.textContent = `«${newQuote}»`;
 
-      // Плавно появляемся
       quoteElement.classList.remove("fade-out");
-    }, 1000); // столько же, сколько transition: opacity
+    }, 1000); 
   }
 
-  updateAffirmation(); // первая аффирмация при загрузке
-  setInterval(updateAffirmation, 5000); // меняем каждые 5 секунд
+  updateAffirmation(); 
+  setInterval(updateAffirmation, 5000); 
 });
