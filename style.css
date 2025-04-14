@@ -324,7 +324,115 @@ body {
         padding-right: 2px;
     }
 
+   
 
+      .emotions-block {
+        padding: 60px 20px;
+        /* background-color: #fff; */
+        text-align: center;
+      }
+      .emotions-block h1{
+        font-size: 48px;
+        padding-bottom: 50px;
+      }
+      .emotions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-bottom: 40px;
+      }
+      
+      .emotion-card {
+        background: #f9f9f9;
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease;
+      }
+      
+      .emotion-card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .emotion-card img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+        object-fit: contain;
+      }
+      
+      .emotion-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      
+      .emotion-card p {
+        font-size: 14px;
+        color: #666;
+      }
+      
+      .emotion-footer p {
+        margin-bottom: 8px;
+        color: #444;
+      }
+      
+      .emotion-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 20px 40px;
+        background-color: #b6cdbd;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+      
+      .emotion-btn:hover {
+        background-color: #7a897e;
+      }
+      
+      
+      .help-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+      
+      .help-card {
+        width: 250px;
+        border-radius: 12px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+        transition: transform 0.3s ease;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .help-card img {
+        /* width: 100%;
+        height: 200px; */
+        object-fit: cover;
+        width: 150px;
+        padding-top: 10px;
+        
+      }
+      
+      .help-card p {
+        font-size: 21px;
+        padding: 15px;
+        color: #444;
+      }
+      
+      .help-card:hover {
+        transform: translateY(-5px);
+      }
+      
 
     .mood-selection {
         display: flex;
@@ -506,15 +614,42 @@ body {
     font-weight: bold;
     text-decoration: none;
   }
-  
-  /* Аффирмация */
   #affirmation {
-    background-color: #dff9fb;
+    background-color: #f0f8f6;
+    padding: 50px 20px;
     text-align: center;
-    font-size: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin: 40px 0;
+  }
+  
+  #affirmation h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #5c715e;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+  .affirmation-text {
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+  .affirmation-text.fade-out {
+    opacity: 0;
+  }
+  
+  
+  #daily-quote {
+    font-size: 24px;
     font-style: italic;
-    padding: 40px 20px;
+    color: #333;
+    background: #ffffff;
+    display: inline-block;
+    padding: 20px 30px;
     border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 0 auto;
   }
   
   /* Подвал */

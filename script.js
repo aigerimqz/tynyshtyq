@@ -72,7 +72,23 @@ document.addEventListener('DOMContentLoaded', () => {
   
   document.addEventListener('DOMContentLoaded', () => {
     const quoteElement = document.getElementById('daily-quote');
-    const randomIndex = Math.floor(Math.random() * affirmations.length);
-    quoteElement.textContent = `«${affirmations[randomIndex]}»`;
+  
+    function updateAffirmation() {
+      // Плавно исчезаем
+      quoteElement.classList.add('fade-out');
+  
+      // Подождём, пока завершится анимация исчезновения
+      setTimeout(() => {
+        const randomIndex = Math.floor(Math.random() * affirmations.length);
+        const newQuote = affirmations[randomIndex];
+        quoteElement.textContent = `«${newQuote}»`;
+  
+        // Плавно появляемся
+        quoteElement.classList.remove('fade-out');
+      }, 1000); // столько же, сколько transition: opacity
+    }
+  
+    updateAffirmation(); // первая аффирмация при загрузке
+    setInterval(updateAffirmation, 5000); // меняем каждые 5 секунд
   });
   
