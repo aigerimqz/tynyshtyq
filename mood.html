@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Эмоциялық жағдайға арналған ұсыныстар</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 2rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      width: 280px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .card-description {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    .card button {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: #2563eb;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+    .card button:hover {
+      background: #eff6ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h2>😌 Устал — Спокойствие мен Жеңілдік керек кезде</h2>
+    <div class="cards">
+
+      <!-- Book Card -->
+      <div class="card">
+        <img src="book-example.jpg" alt="Кітап суреті">
+        <div class="card-content">
+          <div class="card-title">«Тыныштық күші» — Райан Холидей</div>
+          <div class="card-description">
+            Бұл кітап сенің ішкі тыныштығыңды табуға көмектеседі. Ақылмен өмір сүру және стресске қарсы тұру жолдарын зерттейді.
+          </div>
+          <button>📖 Оқу</button>
+        </div>
+      </div>
+
+      <!-- Podcast Card 1 -->
+      <div class="card">
+        <img src="podcast1.jpg" alt="Подкаст суреті">
+        <div class="card-content">
+          <div class="card-title">«Құлақ түр» — Эмоцияны басқару</div>
+          <div class="card-description">
+            Жұмыстан кейінгі шаршауды жеңілдететін, тыныштық сыйлайтын подкаст.
+          </div>
+          <button>🎧 Тыңдау</button>
+        </div>
+      </div>
+
+      <!-- Podcast Card 2 -->
+      <div class="card">
+        <img src="podcast2.jpg" alt="Подкаст суреті">
+        <div class="card-content">
+          <div class="card-title">«Көңіл-күй күнделігі» — Өз-өзіңе қамқорлық</div>
+          <div class="card-description">
+            Әр күнге арналған шағын эпизодтар. Психологиялық релакс пен демалыс уақытына таптырмас.
+          </div>
+          <button>🎧 Тыңдау</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

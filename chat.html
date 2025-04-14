@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Психологпен әңгіме</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f2fe, #fdf2f8);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .chat-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin: 50px auto;
+    }
+
+    .chat-box {
+      flex: 1;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+
+    .message {
+      margin: 0.5rem 0;
+      padding: 0.75rem 1rem;
+      border-radius: 1rem;
+      max-width: 80%;
+    }
+
+    .user {
+      background: #dbeafe;
+      align-self: flex-end;
+      text-align: right;
+    }
+
+    .bot {
+      background: #fef3c7;
+      align-self: flex-start;
+    }
+
+    .input-area {
+      display: flex;
+      border-top: 1px solid #eee;
+    }
+
+    input {
+      flex: 1;
+      padding: 1rem;
+      border: none;
+      border-radius: 0;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    button {
+      background: #60a5fa;
+      color: white;
+      border: none;
+      padding: 0 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #3b82f6;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-box" id="chatBox">
+      <div class="message bot">Сәлем! Мен сені тыңдауға дайынмын 💬</div>
+    </div>
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Жазыңыз..." onkeydown="handleKey(event)">
+      <button onclick="sendMessage()">Жіберу</button>
+    </div>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const input = document.getElementById('userInput');
+      const message = input.value.trim();
+      if (message === '') return;
+
+      appendMessage(message, 'user');
+      input.value = '';
+
+      // Эмуляция ответа от ИИ (позже заменим на API)
+      setTimeout(() => {
+        const response = generateBotResponse(message);
+        appendMessage(response, 'bot');
+      }, 600);
+    }
+
+    function appendMessage(text, type) {
+      const chatBox = document.getElementById('chatBox');
+      const messageDiv = document.createElement('div');
+      messageDiv.className = `message ${type}`;
+      messageDiv.textContent = text;
+      chatBox.appendChild(messageDiv);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function handleKey(event) {
+      if (event.key === 'Enter') {
+        sendMessage();
+      }
+    }
+
+    function generateBotResponse(userInput) {
+      // Здесь будет ИИ-логика — пока просто фраза
+      return "Мен сені түсінемін. Тағы не айтқың келеді?";
+    }
+  </script>
+</body>
+</html>
