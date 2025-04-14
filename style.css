@@ -671,4 +671,150 @@ body {
       transform: translateY(0);
     }
   }
+
+
+  /* ================== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНА ================== */
+@media (max-width: 768px) {
+
+    body {
+      background: url('phonebg.JPG');
+      background-size: contain;
+    }
+   
+  
+    .header {
+        flex-direction: column;
+        padding: 5px 20px;
+        height: auto;
+        text-align: center;
+    }
+    .nav{
+        display: none;
+    }
+  
+    .tittle {
+      font-size: 36px;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .tittle p{
+        margin: 10px auto;
+    }
+  
+    .tittle img {
+      width: 30px;
+      margin-left: 8px;
+    }
+  
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav a {
+      font-size: 16px;
+      padding: 5px 0;
+    }
+  
+    #intro {
+      flex-direction: column;
+      padding: 30px 10px;
+      text-align: center;
+    }
+  
+    #intro h2 {
+      font-size: 32px;
+    }
+  
+    #intro p {
+      font-size: 18px;
+      padding: 10px;
+    }
+  
+    #about-section {
+      flex-direction: column;
+      padding: 50px 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+    #about-section p{
+        text-align: justify;
+        padding: 0;
+        margin-top: 120px;
+        
+    }
+  
+    #about-section .tittle {
+      padding: 0;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #about-section .tittle img{
+        display: none;
+      }
+  
+    #about-section .tittle p {
+      font-size: 64px;
+      padding: 0;
+    }
+  
+    
+    #about-section .bg-img{
+        position: absolute;
+        width: 400px;
+        left: 10px;
+      }
+  
+    #test-section {
+      flex-direction: column;
+      margin: 0;
+      padding: 50px 20px;
+      text-align: center;
+    }
+  
+    .test-info {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .test-part {
+      width: 100%;
+      height: 300px;
+      margin: 30px 0 0 0;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    .doctors-list {
+      flex-direction: column;
+      gap: 40px;
+    }
+    #emotions-block h1{
+        font-size: 12px;
+    }
+  
+    .doctor-img img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .glass-button {
+      font-size: 18px;
+      padding: 15px 20px;
+    }
+  
+    .emotions-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .emotion-card img {
+      width: 120px;
+      height: 120px;
+    }
+  
+  }
+  
   

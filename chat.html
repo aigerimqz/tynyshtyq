@@ -77,6 +77,79 @@
     button:hover {
       background: #3b82f6;
     }
+    @media (max-width: 768px) {
+  /* Контейнер для чата */
+        .chat-container {
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        /* Область сообщений */
+        .chat-box {
+            padding: 10px;
+            height: 300px; /* Можно настроить по потребности */
+            overflow-y: auto;
+            font-size: 14px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        /* Сообщение от бота */
+        .message.bot {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px 0;
+            text-align: left;
+        }
+
+        /* Сообщение от пользователя */
+        .message.user {
+            background-color: #d1e8ff;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px 0;
+            text-align: right;
+        }
+
+        /* Ввод пользователя */
+        .input-area {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        /* Текстовое поле для ввода */
+        .input-area input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Кнопка отправки */
+        .input-area button {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .input-area button:hover {
+            background-color: #45a049;
+        }
+    }
+
+
   </style>
 </head>
 <body>
