@@ -1,203 +1,206 @@
 <!DOCTYPE html>
 <html lang="kk">
-<head>
-  <meta charset="UTF-8">
-  <title>Психологпен әңгіме</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #e0f2fe, #fdf2f8);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>Психологпен әңгіме</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #e0f2fe, #fdf2f8);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
 
-    .chat-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      border-radius: 1rem;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      overflow: hidden;
-      margin: 50px auto;
-    }
+      .chat-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        border-radius: 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 50px auto;
+      }
 
-    .chat-box {
-      flex: 1;
-      padding: 1rem;
-      overflow-y: auto;
-    }
+      .chat-box {
+        flex: 1;
+        padding: 1rem;
+        overflow-y: auto;
+      }
 
-    .message {
-      margin: 0.5rem 0;
-      padding: 0.75rem 1rem;
-      border-radius: 1rem;
-      max-width: 80%;
-    }
+      .message {
+        margin: 0.5rem 0;
+        padding: 0.75rem 1rem;
+        border-radius: 1rem;
+        max-width: 80%;
+      }
 
-    .user {
-      background: #dbeafe;
-      align-self: flex-end;
-      text-align: right;
-    }
+      .user {
+        background: #dbeafe;
+        align-self: flex-end;
+        text-align: right;
+      }
 
-    .bot {
-      background: #fef3c7;
-      align-self: flex-start;
-    }
+      .bot {
+        background: #fef3c7;
+        align-self: flex-start;
+      }
 
-    .input-area {
-      display: flex;
-      border-top: 1px solid #eee;
-    }
+      .input-area {
+        display: flex;
+        border-top: 1px solid #eee;
+      }
 
-    input {
-      flex: 1;
-      padding: 1rem;
-      border: none;
-      border-radius: 0;
-      font-size: 1rem;
-      outline: none;
-    }
+      input {
+        flex: 1;
+        padding: 1rem;
+        border: none;
+        border-radius: 0;
+        font-size: 1rem;
+        outline: none;
+      }
 
-    button {
-      background: #60a5fa;
-      color: white;
-      border: none;
-      padding: 0 1.5rem;
-      font-size: 1rem;
-      cursor: pointer;
-    }
+      button {
+        background: #60a5fa;
+        color: white;
+        border: none;
+        padding: 0 1.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+      }
 
-    button:hover {
-      background: #3b82f6;
-    }
-    @media (max-width: 768px) {
-  /* Контейнер для чата */
+      button:hover {
+        background: #3b82f6;
+      }
+      @media (max-width: 768px) {
+        /* Контейнер для чата */
         .chat-container {
-            width: 100%;
-            padding: 15px;
-            box-sizing: border-box;
-            margin: 0 auto;
+          width: 100%;
+          padding: 15px;
+          box-sizing: border-box;
+          margin: 0 auto;
         }
 
         /* Область сообщений */
         .chat-box {
-            padding: 10px;
-            height: 300px; /* Можно настроить по потребности */
-            overflow-y: auto;
-            font-size: 14px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
+          padding: 10px;
+          height: 300px; /* Можно настроить по потребности */
+          overflow-y: auto;
+          font-size: 14px;
+          background-color: #f9f9f9;
+          border-radius: 8px;
         }
 
         /* Сообщение от бота */
         .message.bot {
-            background-color: #f1f1f1;
-            padding: 10px;
-            border-radius: 10px;
-            margin: 5px 0;
-            text-align: left;
+          background-color: #f1f1f1;
+          padding: 10px;
+          border-radius: 10px;
+          margin: 5px 0;
+          text-align: left;
         }
 
         /* Сообщение от пользователя */
         .message.user {
-            background-color: #d1e8ff;
-            padding: 10px;
-            border-radius: 10px;
-            margin: 5px 0;
-            text-align: right;
+          background-color: #d1e8ff;
+          padding: 10px;
+          border-radius: 10px;
+          margin: 5px 0;
+          text-align: right;
         }
 
         /* Ввод пользователя */
         .input-area {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 10px;
         }
 
         /* Текстовое поле для ввода */
         .input-area input {
-            width: 100%;
-            padding: 10px;
-            font-size: 14px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
+          width: 100%;
+          padding: 10px;
+          font-size: 14px;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
         }
 
         /* Кнопка отправки */
         .input-area button {
-            width: 100%;
-            padding: 10px;
-            font-size: 14px;
-            border: none;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 8px;
-            cursor: pointer;
+          width: 100%;
+          padding: 10px;
+          font-size: 14px;
+          border: none;
+          background-color: #4caf50;
+          color: white;
+          border-radius: 8px;
+          cursor: pointer;
         }
 
         .input-area button:hover {
-            background-color: #45a049;
+          background-color: #45a049;
         }
-    }
-
-
-  </style>
-</head>
-<body>
-  <div class="chat-container">
-    <div class="chat-box" id="chatBox">
-      <div class="message bot">Сәлем! Мен сені тыңдауға дайынмын 💬</div>
-    </div>
-    <div class="input-area">
-      <input type="text" id="userInput" placeholder="Жазыңыз..." onkeydown="handleKey(event)">
-      <button onclick="sendMessage()">Жіберу</button>
-    </div>
-  </div>
-
-  <script>
-    function sendMessage() {
-      const input = document.getElementById('userInput');
-      const message = input.value.trim();
-      if (message === '') return;
-
-      appendMessage(message, 'user');
-      input.value = '';
-
-      // Эмуляция ответа от ИИ (позже заменим на API)
-      setTimeout(() => {
-        const response = generateBotResponse(message);
-        appendMessage(response, 'bot');
-      }, 600);
-    }
-
-    function appendMessage(text, type) {
-      const chatBox = document.getElementById('chatBox');
-      const messageDiv = document.createElement('div');
-      messageDiv.className = `message ${type}`;
-      messageDiv.textContent = text;
-      chatBox.appendChild(messageDiv);
-      chatBox.scrollTop = chatBox.scrollHeight;
-    }
-
-    function handleKey(event) {
-      if (event.key === 'Enter') {
-        sendMessage();
       }
-    }
+    </style>
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-box" id="chatBox">
+        <div class="message bot">Сәлем! Мен сені тыңдауға дайынмын 💬</div>
+      </div>
+      <div class="input-area">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Жазыңыз..."
+          onkeydown="handleKey(event)"
+        />
+        <button onclick="sendMessage()">Жіберу</button>
+      </div>
+    </div>
 
-    function generateBotResponse(userInput) {
-      // Здесь будет ИИ-логика — пока просто фраза
-      return "Мен сені түсінемін. Тағы не айтқың келеді?";
-    }
-  </script>
-</body>
+    <script>
+      function sendMessage() {
+        const input = document.getElementById("userInput");
+        const message = input.value.trim();
+        if (message === "") return;
+
+        appendMessage(message, "user");
+        input.value = "";
+
+        // Эмуляция ответа от ИИ (позже заменим на API)
+        setTimeout(() => {
+          const response = generateBotResponse(message);
+          appendMessage(response, "bot");
+        }, 600);
+      }
+
+      function appendMessage(text, type) {
+        const chatBox = document.getElementById("chatBox");
+        const messageDiv = document.createElement("div");
+        messageDiv.className = `message ${type}`;
+        messageDiv.textContent = text;
+        chatBox.appendChild(messageDiv);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
+
+      function handleKey(event) {
+        if (event.key === "Enter") {
+          sendMessage();
+        }
+      }
+
+      function generateBotResponse(userInput) {
+        // Здесь будет ИИ-логика — пока просто фраза
+        return "Мен сені түсінемін. Тағы не айтқың келеді?";
+      }
+    </script>
+  </body>
 </html>

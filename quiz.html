@@ -1,149 +1,169 @@
 <!DOCTYPE html>
 <html lang="kk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Өзіңді тыңда</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #f7f1f1, #dbeafe);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* height: 100vh; */
-    }
-    .container {
-      background: white;
-      border-radius: 2rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      padding: 2rem;
-      width: 90%;
-      max-width: 500px;
-      transition: all 0.5s ease;
-      margin: 50px 0;
-    }
-    .fade {
-      animation: fadeIn 1s ease forwards;
-      opacity: 0;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Өзіңді тыңда</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #f7f1f1, #dbeafe);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
       }
-    }
-    h2 {
-      margin-bottom: 1rem;
-      color: #333;
-    }
-    textarea, select, input[type="text"] {
-      width: 100%;
-      padding: 0.75rem;
-      margin-top: 0.5rem;
-      border-radius: 1rem;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-    button {
-      margin-top: 1rem;
-      background: #60a5fa;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 1.5rem;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-    }
-    button:hover {
-      background: #3b82f6;
-    }
-    .summary {
-      margin-top: 1rem;
-      padding: 1rem;
-      background: #f0f9ff;
-      border-radius: 1rem;
-      font-size: 0.95rem;
-      color: #333;
-    }
-    .back-link {
-      margin-top: 1.5rem;
-      display: block;
-      text-align: center;
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .back-link:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <div class="container fade" id="quiz">
-    <h2>Сәлем! Қош келдіңіз 🕊️</h2>
-    <p>Бүгін өзіңізге аз ғана уақыт бөлгіңіз келе ме?</p>
-    <button onclick="nextQuestion(1)">Иә</button>
-    <button onclick="endQuiz()">Жоқ</button>
-    <a href="index.html" class="back-link">🔙 Басты бетке қайту</a>
-  </div>
+      .container {
+        background: white;
+        border-radius: 2rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 90%;
+        max-width: 500px;
+        transition: all 0.5s ease;
+        margin: 50px 0;
+      }
+      .fade {
+        animation: fadeIn 1s ease forwards;
+        opacity: 0;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+      h2 {
+        margin-bottom: 1rem;
+        color: #333;
+      }
+      textarea,
+      select,
+      input[type="text"] {
+        width: 100%;
+        padding: 0.75rem;
+        margin-top: 0.5rem;
+        border-radius: 1rem;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+      }
+      button {
+        margin-top: 1rem;
+        background: #60a5fa;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+      }
+      button:hover {
+        background: #3b82f6;
+      }
+      .summary {
+        margin-top: 1rem;
+        padding: 1rem;
+        background: #f0f9ff;
+        border-radius: 1rem;
+        font-size: 0.95rem;
+        color: #333;
+      }
+      .back-link {
+        margin-top: 1.5rem;
+        display: block;
+        text-align: center;
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .back-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container fade" id="quiz">
+      <h2>Сәлем! Қош келдіңіз 🕊️</h2>
+      <p>Бүгін өзіңізге аз ғана уақыт бөлгіңіз келе ме?</p>
+      <button onclick="nextQuestion(1)">Иә</button>
+      <button onclick="endQuiz()">Жоқ</button>
+      <a href="index.html" class="back-link">🔙 Басты бетке қайту</a>
+    </div>
 
-  <script>
-    const questions = [
-      { q: "Бүгін өзіңізді қалай сезініп тұрсыз?", type: "textarea" },
-      { q: "Қазір сізге ең керек нәрсе не деп ойлайсыз?", type: "select", options: ["💙 Мейірім", "💭 Тыңдау", "🌿 Тыныштық", "🌞 Шабыт"] },
-      { q: "Сізді ең соңғы рет не шабыттандырды?", type: "textarea" },
-      { q: "Сіз өзіңізге қаншалықты жиі жылы сөз айтасыз?", type: "select", options: ["🔹 Күнде", "🔸 Сирек", "⚪ Мүлде айтпаймын"] },
-      { q: "Қазір жүрегіңізде қандай сезім бар?", type: "textarea" },
-      { q: "Өзіңізді түсінетін бір адам бар ма өміріңізде?", type: "select", options: ["Иә", "Жоқ"] },
-      { q: "Сіз үшін тыныштық деген не?", type: "textarea" }
-    ];
+    <script>
+      const questions = [
+        { q: "Бүгін өзіңізді қалай сезініп тұрсыз?", type: "textarea" },
+        {
+          q: "Қазір сізге ең керек нәрсе не деп ойлайсыз?",
+          type: "select",
+          options: ["💙 Мейірім", "💭 Тыңдау", "🌿 Тыныштық", "🌞 Шабыт"],
+        },
+        { q: "Сізді ең соңғы рет не шабыттандырды?", type: "textarea" },
+        {
+          q: "Сіз өзіңізге қаншалықты жиі жылы сөз айтасыз?",
+          type: "select",
+          options: ["🔹 Күнде", "🔸 Сирек", "⚪ Мүлде айтпаймын"],
+        },
+        { q: "Қазір жүрегіңізде қандай сезім бар?", type: "textarea" },
+        {
+          q: "Өзіңізді түсінетін бір адам бар ма өміріңізде?",
+          type: "select",
+          options: ["Иә", "Жоқ"],
+        },
+        { q: "Сіз үшін тыныштық деген не?", type: "textarea" },
+      ];
 
-    let current = 0;
-    const answers = [];
+      let current = 0;
+      const answers = [];
 
-    function nextQuestion(i) {
-      if (current > 0) {
-        saveAnswer();
-      }
-      const container = document.getElementById('quiz');
-      if (i > questions.length) {
-        showFinal();
-        return;
-      }
-      current = i;
-      const q = questions[i - 1];
-      let input = '';
-      if (q.type === 'textarea') {
-        input = `<textarea id="userInput" placeholder="Жауабыңызды жазыңыз..."></textarea>`;
-      } else if (q.type === 'select') {
-        input = `<select id="userInput">` + q.options.map(opt => `<option>${opt}</option>`).join('') + `</select>`;
-      }
-      container.innerHTML = `
+      function nextQuestion(i) {
+        if (current > 0) {
+          saveAnswer();
+        }
+        const container = document.getElementById("quiz");
+        if (i > questions.length) {
+          showFinal();
+          return;
+        }
+        current = i;
+        const q = questions[i - 1];
+        let input = "";
+        if (q.type === "textarea") {
+          input = `<textarea id="userInput" placeholder="Жауабыңызды жазыңыз..."></textarea>`;
+        } else if (q.type === "select") {
+          input =
+            `<select id="userInput">` +
+            q.options.map((opt) => `<option>${opt}</option>`).join("") +
+            `</select>`;
+        }
+        container.innerHTML = `
         <div class="fade">
           <h2>${q.q}</h2>
           ${input}
           <button onclick="nextQuestion(${i + 1})">Келесі</button>
         </div>
       `;
-    }
-
-    function saveAnswer() {
-      const input = document.getElementById('userInput');
-      if (input) {
-        answers.push({ question: questions[current - 1].q, answer: input.value });
       }
-    }
-    function showFinal() {
-        const container = document.getElementById('quiz');
+
+      function saveAnswer() {
+        const input = document.getElementById("userInput");
+        if (input) {
+          answers.push({
+            question: questions[current - 1].q,
+            answer: input.value,
+          });
+        }
+      }
+      function showFinal() {
+        const container = document.getElementById("quiz");
         let summaryHTML = '<div class="summary">';
-        summaryHTML += '<h3>Сіздің жауаптарыңыз:</h3>';
-        answers.forEach(a => {
-            summaryHTML += `<p><strong>${a.question}</strong><br>${a.answer}</p>`;
+        summaryHTML += "<h3>Сіздің жауаптарыңыз:</h3>";
+        answers.forEach((a) => {
+          summaryHTML += `<p><strong>${a.question}</strong><br>${a.answer}</p>`;
         });
-        summaryHTML += '</div>';
+        summaryHTML += "</div>";
         sendEmail(answers);
         container.innerHTML = `
             <div class="fade">
@@ -154,19 +174,22 @@
             <a href="index.html" class="back-link">🔙 Басты бетке қайту</a>
             </div>
         `;
-    }
+      }
 
+      function sendEmail(answers) {
+        const emailBody = answers
+          .map((a) => `${a.question}\n${a.answer}\n\n`)
+          .join("");
+        const mailtoLink = `mailto:manataigerim@gmail.com?subject=Жаңа жауаптар&body=${encodeURIComponent(
+          emailBody
+        )}`;
+        window.location.href = mailtoLink;
+      }
 
-    function sendEmail(answers) {
-      const emailBody = answers.map(a => `${a.question}\n${a.answer}\n\n`).join('');
-      const mailtoLink = `mailto:manataigerim@gmail.com?subject=Жаңа жауаптар&body=${encodeURIComponent(emailBody)}`;
-      window.location.href = mailtoLink;
-    }
-
-    function endQuiz() {
-      const container = document.getElementById('quiz');
-      container.innerHTML = `<div class="fade"><h2>Жарайды 💙</h2><p>Қашан дайын болсаңыз, қайта оралыңыз.</p><a href="tynyshtyq.html" class="back-link">🔙 Басты бетке қайту</a></div>`;
-    }
-  </script>
-</body>
+      function endQuiz() {
+        const container = document.getElementById("quiz");
+        container.innerHTML = `<div class="fade"><h2>Жарайды 💙</h2><p>Қашан дайын болсаңыз, қайта оралыңыз.</p><a href="tynyshtyq.html" class="back-link">🔙 Басты бетке қайту</a></div>`;
+      }
+    </script>
+  </body>
 </html>

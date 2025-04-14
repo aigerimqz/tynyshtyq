@@ -1,34 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap");
 
-*{
-    font-family: 'Montserrat', sans-serif;
+* {
+  font-family: "Montserrat", sans-serif;
 }
 /* Общие стили */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    scroll-behavior: smooth;
-    background: url('./bggg.JPG') no-repeat;
-    background-size:contain;
-    
-    
-  }
-  
-  /* h1, h2, h3 {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  scroll-behavior: smooth;
+  background: url("./bggg.JPG") no-repeat;
+  background-size: contain;
+}
+
+/* h1, h2, h3 {
     color: #2c3e50;
   } */
-  
-  /* section {
+
+/* section {
     padding: 60px 20px;
     max-width: 900px;
     margin: 0 auto;
   } */
-  
-  /* .btn, button {
+
+/* .btn, button {
     background-color: #6a89cc;
     color: white;
     border: none;
@@ -38,76 +36,73 @@ body {
     transition: background-color 0.3s;
     font-size: 16px;
   } */
-  
-  .btn:hover, button:hover {
-    background-color: #4a69bd;
-  }
-  
-  input, textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-  }
- 
-  .header{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    /* position: fixed; */
-   
-    /* width: 100%; */
-    height: 80px;
-    padding: 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0.1); /* прозрачность */
-    backdrop-filter: blur(10px);          /* блюр заднего фона */
-    -webkit-backdrop-filter: blur(10px);
-    color: white;
-    z-index: 999;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    
-   
-   
-  }
-  .tittle{
-    display: flex;
-    
-    justify-content: space-between;
-    padding: 0;
-    font-size: 32px;
-    align-items: center;
-  }
-  .tittle p{
-    font-family: 'Cormorant Infant', sans-serif;
-    font-weight: 600;
-  }
-  .tittle img{
-    width: 40px;
-    
-    
-  }
-  .nav{
-    display: flex;
-    justify-content: space-between;
-  }
-  .nav a{
-    text-decoration: none;
-    padding: 0 10px;
-    color: white;
-    font-size: 20px;
-  }
-  .nav a:hover{
-    text-decoration: underline 1px white;
-   
-  }
-  /* .fade-to-white {
+
+.btn:hover,
+button:hover {
+  background-color: #4a69bd;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  /* position: fixed; */
+
+  /* width: 100%; */
+  height: 80px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1); /* прозрачность */
+  backdrop-filter: blur(10px); /* блюр заднего фона */
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  z-index: 999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.tittle {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 0;
+  font-size: 32px;
+  align-items: center;
+}
+.tittle p {
+  font-family: "Cormorant Infant", sans-serif;
+  font-weight: 600;
+}
+.tittle img {
+  width: 40px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: white;
+  font-size: 20px;
+}
+.nav a:hover {
+  text-decoration: underline 1px white;
+}
+/* .fade-to-white {
     height: 150px;
     width: 100%;
     background: linear-gradient(to bottom, rgba(0,0,0,0), #667655);
@@ -117,704 +112,679 @@ body {
   }
    */
 
-  .container{
-    background-color: #f2f9f1;
-    padding: 20px 240px;
-    margin: 0 auto;
+.container {
+  background-color: #f2f9f1;
+  padding: 20px 240px;
+  margin: 0 auto;
+}
+/* Приветственная анимация */
+#welcome-animation {
+  height: 100vh;
+  background: linear-gradient(to right, #74b9ff, #a29bfe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#welcome-animation .overlay {
+  text-align: center;
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#welcome-animation h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#welcome-animation p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+#intro {
+  padding: 200px 250px;
+
+  /* height: 40vw; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+#intro h2 {
+  font-size: 48px;
+}
+
+#intro p {
+  font-size: 30px;
+  font-family: "Cormorant Infant", sans-serif;
+  padding-left: 200px;
+  padding-right: 20px;
+  text-align: justify;
+  font-weight: lighter;
+}
+#about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 36px;
+  padding: 100px 0;
+}
+#about-section .tittle {
+  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+}
+#about-section .tittle p {
+  font-size: 78px;
+  font-family: "Cormorant Infant", sans-serif;
+  font-weight: 600;
+  padding-right: 100px;
+  padding: 0;
+}
+#about-section .tittle img {
+  width: 78px;
+}
+#about-section .bg-img {
+  position: absolute;
+  width: 400px;
+  left: 300px;
+}
+#about-section p {
+  padding-left: 100px;
+}
+
+#test-section {
+  margin: 100px -240px;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b6cdbd;
+}
+.test-info {
+  font-size: 21px;
+  max-width: 500px;
+  text-align: justify;
+}
+.test-info h1 {
+  font-size: 36px;
+}
+.test-img {
+  width: 200px;
+  position: absolute;
+}
+.test-part {
+  box-sizing: border-box;
+  background-image: url("./test.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 20px;
+  margin: 0;
+  width: 350px;
+  height: 350px;
+
+  border-radius: 20px;
+  margin-left: 100px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.test-part:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.test-part h2 {
+  text-align: center;
+  color: white;
+}
+.glass-button {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  text-decoration: none;
+  backdrop-filter: blur(5px); /* эффект стекла */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+  color: #f0f9ff;
+}
+#doctors-part h1 {
+  font-size: 48px;
+}
+#doctors-part {
+  padding: 70px 0;
+}
+.doctors-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: 600;
+  align-items: center;
+  padding: 50px 0;
+}
+.doctor-img img {
+  width: 200px;
+  height: 200px; /* Add this line */
+  border-radius: 50%;
+  object-fit: cover; /* Optional but helps keep the image centered and neat */
+}
+.doctors-item {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.chat-btn {
+  display: flex;
+  text-decoration: none;
+  background-color: #b6cdbd;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #333;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  /* width: 120px; */
+  text-align: center;
+  justify-content: center;
+}
+.chat-btn:hover {
+  transform: scale(1.05);
+}
+.chat-btn img {
+  padding-right: 2px;
+}
+
+.emotions-block {
+  padding: 60px 20px;
+  /* background-color: #fff; */
+  text-align: center;
+}
+.emotions-block h1 {
+  font-size: 48px;
+  padding-bottom: 50px;
+}
+.emotions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.emotion-card {
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.emotion-card:hover {
+  transform: translateY(-5px);
+}
+
+.emotion-card img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.emotion-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.emotion-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.emotion-footer p {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.emotion-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px 40px;
+  background-color: #b6cdbd;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.emotion-btn:hover {
+  background-color: #7a897e;
+}
+
+.help-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.help-card {
+  width: 250px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.help-card img {
+  /* width: 100%;
+        height: 200px; */
+  object-fit: cover;
+  width: 150px;
+  padding-top: 10px;
+}
+
+.help-card p {
+  font-size: 21px;
+  padding: 15px;
+  color: #444;
+}
+
+.help-card:hover {
+  transform: translateY(-5px);
+}
+
+.mood-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+  align-items: center;
+}
+.mood-selection img {
+  width: 30px;
+  padding-left: 10px;
+}
+.mood-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  border: #b6cdbd 3px solid;
+  background-color: #f2f9f1;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.mood-btn:hover {
+  background-color: #b6cdbd;
+}
+
+.recommendations {
+  margin-top: 30px;
+}
+
+.recommendation-block {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.recommendations-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #6b3fa0;
+}
+
+.recommendations-box h3 {
+  margin-top: 20px;
+  color: #444;
+}
+
+.recommendations-box ul {
+  padding-left: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  /* Приветственная анимация */
-  #welcome-animation {
-    height: 100vh;
-    background: linear-gradient(to right, #74b9ff, #a29bfe);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  #welcome-animation .overlay {
+}
+
+#resources {
+  padding: 70px 0;
+}
+#resources h1 {
+  font-size: 48px;
+}
+
+.sos-help {
+  background-color: #fff8f8;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.3);
+  font-family: "Arial", sans-serif;
+}
+
+.sos-help h2 {
+  font-size: 36px;
+  color: #c4445a;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sos-help p {
+  font-size: 21px;
+  color: #444;
+}
+
+.sos-card {
+  background-color: #ffe5ec;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(200, 100, 120, 0.2);
+}
+
+.sos-card h3 {
+  margin-bottom: 10px;
+  color: #b03050;
+}
+
+.sos-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 21px;
+}
+
+.breathing-circle {
+  margin: 20px auto;
+  width: 60px;
+  height: 60px;
+  background-color: #ff9eb5;
+  border-radius: 50%;
+  animation: breathe 6s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+.sos-emo {
+  width: 36px;
+  padding-right: 10px;
+}
+/* Карточки контента */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #6a89cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+#affirmation {
+  background-color: #f0f8f6;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin: 40px 0;
+}
+
+#affirmation h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #5c715e;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.affirmation-text {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.affirmation-text.fade-out {
+  opacity: 0;
+}
+
+#daily-quote {
+  font-size: 24px;
+  font-style: italic;
+  color: #333;
+  background: #ffffff;
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Подвал */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f2f6;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНА ================== */
+@media (max-width: 768px) {
+  body {
+    background: url("phonebg.JPG");
+    background-size: contain;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 5px 20px;
+    height: auto;
     text-align: center;
-    color: white;
-    animation: fadeIn 2s ease-in-out;
   }
-  
-  #welcome-animation h1 {
+  .nav {
+    display: none;
+  }
+
+  .tittle {
     font-size: 36px;
+    justify-content: center;
     margin-bottom: 10px;
   }
-  
-  #welcome-animation p {
+  .tittle p {
+    margin: 10px auto;
+  }
+
+  .tittle img {
+    width: 30px;
+    margin-left: 8px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  #intro {
+    flex-direction: column;
+    padding: 30px 10px;
+    text-align: center;
+  }
+
+  #intro h2 {
+    font-size: 32px;
+  }
+
+  #intro p {
     font-size: 18px;
-    opacity: 0.8;
-  }
-  
-  #intro{
-    padding: 200px 250px;
-    
-    /* height: 40vw; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    
-  }
-  #intro h2{
-    font-size: 48px;
+    padding: 10px;
   }
 
-  #intro p{
-
-    font-size: 30px;
-    font-family: 'Cormorant Infant', sans-serif;
-    padding-left: 200px;
-    padding-right: 20px;
+  #about-section {
+    flex-direction: column;
+    padding: 50px 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  #about-section p {
     text-align: justify;
-    font-weight:lighter;
+    padding: 0;
+    margin-top: 120px;
   }
-  #about-section{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    font-size: 36px;
-    padding: 100px 0;
-  }
-  #about-section .tittle{
-    padding-left: 100px;
-    display: flex;
+
+  #about-section .tittle {
+    padding: 0;
+    text-align: center;
     justify-content: center;
+    flex-direction: column;
   }
-  #about-section .tittle p{
-   
-    font-size: 78px;
-    font-family: 'Cormorant Infant', sans-serif;
-    font-weight: 600;
-    padding-right: 100px;
+  #about-section .tittle img {
+    display: none;
+  }
+
+  #about-section .tittle p {
+    font-size: 64px;
     padding: 0;
   }
-  #about-section .tittle img{
-    width: 78px;
-   
-  }
-  #about-section .bg-img{
+
+  #about-section .bg-img {
     position: absolute;
     width: 400px;
-    left: 300px;
-  }
-  #about-section p{
-    padding-left: 100px;
+    left: 10px;
   }
 
-
-  #test-section{
-    margin: 100px -240px;
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #b6cdbd;
-  }
-  .test-info{
-    font-size: 21px;
-    max-width: 500px;
-    text-align: justify;
-    
-    
-  }
-  .test-info h1{
-    font-size: 36px;
-  }
-  .test-img{
-    width: 200px;
-    position: absolute;
-  }
-  .test-part{
-    box-sizing: border-box;
-    background-image: url('./test.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 20px 20px;
+  #test-section {
+    flex-direction: column;
     margin: 0;
-    width: 350px;
-    height: 350px;
-   
-    
-    border-radius: 20px;
-    margin-left: 100px;
-    box-shadow:  0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    text-align: center;
-  }
-  .test-part:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-   
-  }
-  .test-part h2{
-    text-align: center;
-    color: white;
-  }
-  .glass-button {
-    font-size: 24px;
-    display: inline-block;
-    padding: 20px 30px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: 1.5px solid rgba(255, 255, 255, 0.4);
-    border-radius: 12px;
-    text-decoration: none;
-    backdrop-filter: blur(5px); /* эффект стекла */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
-  
-  .glass-button:hover {
-    background-color: rgba(255, 255, 255, 0.35);
-    transform: scale(1.05);
-    color: #f0f9ff;
-  }
-    #doctors-part h1{
-        font-size: 48px;
-    }
-    #doctors-part{
-        padding: 70px 0;
-    }
-    .doctors-list{
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        font-weight: 600;
-        align-items: center;
-        padding: 50px 0;
-    }
-    .doctor-img img{
-        width: 200px;
-        height: 200px; /* Add this line */
-        border-radius: 50%;
-        object-fit: cover; /* Optional but helps keep the image centered and neat */
-    }
-    .doctors-item{
-        display: flex;
-        flex-direction: column;
-        
-        align-items: center;
-    }
-    .chat-btn{
-        
-        display: flex;
-        text-decoration: none;
-        background-color: #b6cdbd;
-        padding: 10px 20px;
-        border-radius: 10px;
-        color: #333;
-        font-size: 16px;
-        transition: all 0.3s ease;
-        margin-top: 20px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        align-items: center;
-        /* width: 120px; */
-        text-align: center;
-        justify-content: center;
-        
-    }
-    .chat-btn:hover{
-        transform: scale(1.05);
-      
-    }
-    .chat-btn img{
-        padding-right: 2px;
-    }
-
-   
-
-      .emotions-block {
-        padding: 60px 20px;
-        /* background-color: #fff; */
-        text-align: center;
-      }
-      .emotions-block h1{
-        font-size: 48px;
-        padding-bottom: 50px;
-      }
-      .emotions-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-        margin-bottom: 40px;
-      }
-      
-      .emotion-card {
-        background: #f9f9f9;
-        border-radius: 16px;
-        padding: 20px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        transition: transform 0.3s ease;
-      }
-      
-      .emotion-card:hover {
-        transform: translateY(-5px);
-      }
-      
-      .emotion-card img {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 15px;
-        object-fit: contain;
-      }
-      
-      .emotion-card h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
-        color: #333;
-      }
-      
-      .emotion-card p {
-        font-size: 14px;
-        color: #666;
-      }
-      
-      .emotion-footer p {
-        margin-bottom: 8px;
-        color: #444;
-      }
-      
-      .emotion-btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 20px 40px;
-        background-color: #b6cdbd;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-      }
-      
-      .emotion-btn:hover {
-        background-color: #7a897e;
-      }
-      
-      
-      .help-cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-      }
-      
-      .help-card {
-        width: 250px;
-        border-radius: 12px;
-        background-color: #ffffff;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
-        transition: transform 0.3s ease;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-      }
-      
-      .help-card img {
-        /* width: 100%;
-        height: 200px; */
-        object-fit: cover;
-        width: 150px;
-        padding-top: 10px;
-        
-      }
-      
-      .help-card p {
-        font-size: 21px;
-        padding: 15px;
-        color: #444;
-      }
-      
-      .help-card:hover {
-        transform: translateY(-5px);
-      }
-      
-
-    .mood-selection {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin: 20px 0;
-        align-items: center;
-       
-      }
-    .mood-selection img{
-        width: 30px;
-        padding-left: 10px;
-    }
-      .mood-btn {
-        padding: 12px 20px;
-        border: none;
-        border-radius: 12px;
-        border: #b6cdbd 3px solid;
-        background-color: #f2f9f1;
-        cursor: pointer;
-        transition: 0.3s;
-        font-size: 16px;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-
-      }
-      
-      .mood-btn:hover {
-        background-color: #b6cdbd;
-      }
-      
-      .recommendations {
-        margin-top: 30px;
-      }
-      
-      .recommendation-block {
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 12px;
-        background-color: #fafafa;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      }
-      
-      .recommendations-box {
-        background: #fff;
-        border-radius: 16px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        padding: 20px;
-        animation: fadeIn 0.4s ease-in;
-      }
-    
-      .recommendations-box h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-        color: #6b3fa0;
-      }
-    
-      .recommendations-box h3 {
-        margin-top: 20px;
-        color: #444;
-      }
-    
-      .recommendations-box ul {
-        padding-left: 20px;
-      }
-    
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-
-      #resources{
-        padding: 70px 0;
-      }
-      #resources h1{
-        font-size: 48px;
-      }
-
-
-      .sos-help {
-        background-color: #fff8f8;
-        padding: 40px 20px;
-        border-radius: 10px;
-        margin: 40px auto;
-        max-width: 800px;
-        box-shadow: 0 0 20px rgba(255, 192, 203, 0.3);
-        font-family: 'Arial', sans-serif;
-        
-      }
-      
-      .sos-help h2 {
-        font-size: 36px;
-        color: #c4445a;
-        margin-bottom: 20px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .sos-help p {
-        font-size: 21px;
-        color: #444;
-      }
-      
-      .sos-card {
-        background-color: #ffe5ec;
-        padding: 20px;
-        border-radius: 10px;
-        margin-top: 20px;
-        box-shadow: 0 2px 10px rgba(200, 100, 120, 0.2);
-      }
-      
-      .sos-card h3 {
-        margin-bottom: 10px;
-        color: #b03050;
-      }
-      
-      .sos-card ul {
-        list-style-type: disc;
-        padding-left: 20px;
-        font-size: 21px;
-      }
-      
-      .breathing-circle {
-        margin: 20px auto;
-        width: 60px;
-        height: 60px;
-        background-color: #ff9eb5;
-        border-radius: 50%;
-        animation: breathe 6s ease-in-out infinite;
-      }
-      
-      @keyframes breathe {
-        0% {
-          transform: scale(1);
-          opacity: 0.7;
-        }
-        50% {
-          transform: scale(1.5);
-          opacity: 1;
-        }
-        100% {
-          transform: scale(1);
-          opacity: 0.7;
-        }
-      }
-
-    
- 
-    .sos-emo{
-        width: 36px;
-        padding-right: 10px;
-    }      
-  /* Карточки контента */
-  .content-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-  }
-  
-  .card {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .card h3 {
-    margin-top: 0;
-  }
-  
-  .card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #6a89cc;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  #affirmation {
-    background-color: #f0f8f6;
     padding: 50px 20px;
     text-align: center;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    margin: 40px 0;
   }
-  
-  #affirmation h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #5c715e;
-    font-weight: 600;
-    padding-bottom: 20px;
+
+  .test-info {
+    font-size: 16px;
+    padding: 10px;
   }
-  .affirmation-text {
-    opacity: 1;
-    transition: opacity 1s ease;
+
+  .test-part {
+    width: 100%;
+    height: 300px;
+    margin: 30px 0 0 0;
   }
-  .affirmation-text.fade-out {
-    opacity: 0;
-  }
-  
-  
-  #daily-quote {
-    font-size: 24px;
-    font-style: italic;
-    color: #333;
-    background: #ffffff;
-    display: inline-block;
-    padding: 20px 30px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  /* Подвал */
-  footer {
-    text-align: center;
+
+  .container {
     padding: 20px;
-    background-color: #f1f2f6;
-    font-size: 14px;
-    color: #666;
-  }
-  
-  /* Анимация появления */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    } to {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
 
-
-  /* ================== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНА ================== */
-@media (max-width: 768px) {
-
-    body {
-      background: url('phonebg.JPG');
-      background-size: contain;
-    }
-   
-  
-    .header {
-        flex-direction: column;
-        padding: 5px 20px;
-        height: auto;
-        text-align: center;
-    }
-    .nav{
-        display: none;
-    }
-  
-    .tittle {
-      font-size: 36px;
-      justify-content: center;
-      margin-bottom: 10px;
-    }
-    .tittle p{
-        margin: 10px auto;
-    }
-  
-    .tittle img {
-      width: 30px;
-      margin-left: 8px;
-    }
-  
-    .nav {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .nav a {
-      font-size: 16px;
-      padding: 5px 0;
-    }
-  
-    #intro {
-      flex-direction: column;
-      padding: 30px 10px;
-      text-align: center;
-    }
-  
-    #intro h2 {
-      font-size: 32px;
-    }
-  
-    #intro p {
-      font-size: 18px;
-      padding: 10px;
-    }
-  
-    #about-section {
-      flex-direction: column;
-      padding: 50px 20px;
-      font-size: 24px;
-      text-align: center;
-    }
-    #about-section p{
-        text-align: justify;
-        padding: 0;
-        margin-top: 120px;
-        
-    }
-  
-    #about-section .tittle {
-      padding: 0;
-      text-align: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-    #about-section .tittle img{
-        display: none;
-      }
-  
-    #about-section .tittle p {
-      font-size: 64px;
-      padding: 0;
-    }
-  
-    
-    #about-section .bg-img{
-        position: absolute;
-        width: 400px;
-        left: 10px;
-      }
-  
-    #test-section {
-      flex-direction: column;
-      margin: 0;
-      padding: 50px 20px;
-      text-align: center;
-    }
-  
-    .test-info {
-      font-size: 16px;
-      padding: 10px;
-    }
-  
-    .test-part {
-      width: 100%;
-      height: 300px;
-      margin: 30px 0 0 0;
-    }
-  
-    .container {
-      padding: 20px;
-    }
-  
-    .doctors-list {
-      flex-direction: column;
-      gap: 40px;
-    }
-    #emotions-block h1{
-        font-size: 12px;
-    }
-  
-    .doctor-img img {
-      width: 150px;
-      height: 150px;
-    }
-  
-    .glass-button {
-      font-size: 18px;
-      padding: 15px 20px;
-    }
-  
-    .emotions-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .emotion-card img {
-      width: 120px;
-      height: 120px;
-    }
-  
+  .doctors-list {
+    flex-direction: column;
+    gap: 40px;
   }
-  
-  
+  #emotions-block h1 {
+    font-size: 12px;
+  }
+
+  .doctor-img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .glass-button {
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  .emotions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .emotion-card img {
+    width: 120px;
+    height: 120px;
+  }
+}
